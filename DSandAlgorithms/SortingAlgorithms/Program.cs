@@ -35,7 +35,31 @@ namespace SortingAlgorithms
             //}
             #endregion
 
+            int n = Convert.ToInt32(Console.ReadLine());
+            double[] numbers = new double[n];
+            string[] numbers2 = Console.ReadLine().Split(" ");
 
+            for (int i = 0; i < n; i++)
+            {
+                numbers[i] = Convert.ToDouble(numbers2[i]);
+            }
+            int target = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine(Merge(numbers, target));
+
+
+
+        }
+
+        public static int Merge(double[] nums, int target)
+        {
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == target) 
+                    return i;
+            }
+            return -1;
         }
     }
 }
