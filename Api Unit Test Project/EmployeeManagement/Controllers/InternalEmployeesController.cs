@@ -37,9 +37,7 @@ namespace EmployeeManagement.Controllers
                     YearsInService = e.YearsInService
                 });
 
-            // with AutoMapper
-            //var internalEmployeeDtos =
-            //    _mapper.Map<IEnumerable<InternalEmployeeDto>>(internalEmployees);
+            
 
             return Ok(internalEmployeeDtos);
         }
