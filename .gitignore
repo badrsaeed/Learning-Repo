@@ -368,3 +368,28 @@ FodyWeavers.xsd
 3- fix uploading release same image twice
 4- alter table Batch adding isDistributedAll bit = 1
 5-  alter table Artist adding IsInternationalbit = 0
+/Design Patterns/.vs/Design Patterns/FileContentIndex/317b4c0d-b72f-40cf-a026-84b14d53f257.vsidx
+/Design Patterns/.vs/Design Patterns/FileContentIndex/47084bd9-bb02-4105-aa4f-1f252c1dd9f5.vsidx
+/Design Patterns/.vs/Design Patterns/FileContentIndex/5a7eb647-2f15-4dbf-803f-334b39d8ac59.vsidx
+/Design Patterns/.vs/Design Patterns/FileContentIndex/ba5ba768-d491-4927-9535-e8bfd3ae3feb.vsidx
+/Design Patterns/.vs/Design Patterns/FileContentIndex/f128f8a7-c9c2-4c34-98c1-f112391db040.vsidx
+/Design Patterns/.vs/Design Patterns/v17/.suo
+/Design Patterns/StratgyPattern/bin/Debug/net6.0/StratgyPattern.dll
+/Design Patterns/StratgyPattern/bin/Debug/net6.0/StratgyPattern.exe
+/Design Patterns/StratgyPattern/bin/Debug/net6.0/StratgyPattern.pdb
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/ref/StratgyPattern.dll
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/refint/StratgyPattern.dll
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/apphost.exe
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/StratgyPattern.AssemblyInfo.cs
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/StratgyPattern.AssemblyInfoInputs.cache
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/StratgyPattern.assets.cache
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/StratgyPattern.csproj.CoreCompileInputs.cache
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/StratgyPattern.csproj.FileListAbsolute.txt
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/StratgyPattern.dll
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/StratgyPattern.GeneratedMSBuildEditorConfig.editorconfig
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/StratgyPattern.genruntimeconfig.cache
+/Design Patterns/StratgyPattern/obj/Debug/net6.0/StratgyPattern.pdb
+/Design Patterns/StratgyPattern/obj/project.assets.json
+/Design Patterns/StratgyPattern/obj/project.nuget.cache
+/Design Patterns/StratgyPattern/obj/StratgyPattern.csproj.nuget.dgspec.json
+/Design Patterns/StratgyPattern/obj/StratgyPattern.csproj.nuget.g.props
