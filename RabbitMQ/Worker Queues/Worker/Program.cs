@@ -17,16 +17,17 @@ Console.WriteLine(" [*] Waiting for messages.");
 
 
 var consumer = new EventingBasicConsumer(channel);
+
+var random = new Random();
 consumer.Received += (model, ea) =>
 {
+    var processingTime = random.Next(1,6);
+
     var body = ea.Body.ToArray();
     var msg = Encoding.UTF8.GetString(body);
     Console.WriteLine(msg);
     Console.WriteLine($" [x] Received {msg}");
-
-    int dots = msg.Split(separator: '.').Length - 1;
-    Thread.Sleep(dots * 1000);
-
+    Task.Delay(TimeSpan.FromSeconds(processingTime)).Wait();
     Console.WriteLine(" [x] Done");
 
     channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);

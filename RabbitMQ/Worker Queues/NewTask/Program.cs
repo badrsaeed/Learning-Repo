@@ -10,17 +10,25 @@ var channel = connection.CreateModel();
 
 channel.QueueDeclare(queue: "newTask1", durable: true, exclusive: false, autoDelete: false, arguments: null);
 
-var msg = GetMSG(args);
 
 //Make our msg persistent
 var properties = channel.CreateBasicProperties();
 properties.Persistent = true;
 
-var body = Encoding.UTF8.GetBytes(msg);
-
-channel.BasicPublish(exchange:string.Empty, body: body, routingKey:"newTask", basicProperties:properties);
-
-Console.WriteLine($" [x] Sent {msg}");
+var random = new Random();
+int msgId = 1;
+while (true)
+{
+    var processingTime = random.Next(1, 6);
+    var msg = "Hello World" + msgId;
+    var body = Encoding.UTF8.GetBytes(msg);
+    
+    channel.BasicPublish(exchange:string.Empty, body: body, routingKey:"newTask", basicProperties:properties);
+    
+    Console.WriteLine($" [x] Sent {msg} {msgId} with Id {msgId}");
+    msgId++;
+    Task.Delay(TimeSpan.FromSeconds(processingTime)).Wait();
+}
 
 static string GetMSG(string[] args)
 {

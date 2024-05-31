@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecievingLog", "RecievingLog.csproj", "{F1C838F0-2D1F-495D-A6BE-E2777B186AB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1C838F0-2D1F-495D-A6BE-E2777B186AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C838F0-2D1F-495D-A6BE-E2777B186AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C838F0-2D1F-495D-A6BE-E2777B186AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C838F0-2D1F-495D-A6BE-E2777B186AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3375E53-2D0E-4977-B7E3-9DEC8CAFAF74}
+	EndGlobalSection
+EndGlobal
