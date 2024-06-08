@@ -1,0 +1,6 @@
+@ApiErrorHandlingTemplete_HostAddress = http://localhost:5274
+
+GET {{ApiErrorHandlingTemplete_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
