@@ -48,7 +48,7 @@ namespace ApiErrorHandlingTemplete.Controllers
         public ActionResult ValidationErrorResponse(int id)
         {
             return Ok();
-        }
+        } 
 
         [HttpGet("exception")]
         public ActionResult ExcptionResponse()
