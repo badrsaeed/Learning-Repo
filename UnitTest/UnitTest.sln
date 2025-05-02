@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "TestApp\TestApp.csproj", "{72B71620-6130-4217-93F9-7ABA16F5B668}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetworkTestProject.Test", "NetworkTestProject.Test\NetworkTestProject.Test.csproj", "{AF6EE5E9-153F-486B-ADD5-2CD9BDBC272D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MCV Project", "MCV Project", "{57C5BAA7-01F9-4D01-98D7-9440B7D989EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunGroopWebApp", "RunGroop-master\RunGroopWebApp\RunGroopWebApp.csproj", "{15D24618-8FEA-407C-8DBA-82D54CEB9332}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunGroopWebApp.Scraper", "RunGroop-master\RunGroopWebApp.Scraper\RunGroopWebApp.Scraper.csproj", "{FFC8802C-7C7B-43B0-9754-5E1E0D924E79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunGrooper.Tests", "RunGrooper.Tests\RunGrooper.Tests.csproj", "{A086E1AE-8703-403E-AB9F-9471B2FC474E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72B71620-6130-4217-93F9-7ABA16F5B668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B71620-6130-4217-93F9-7ABA16F5B668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B71620-6130-4217-93F9-7ABA16F5B668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B71620-6130-4217-93F9-7ABA16F5B668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF6EE5E9-153F-486B-ADD5-2CD9BDBC272D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6EE5E9-153F-486B-ADD5-2CD9BDBC272D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6EE5E9-153F-486B-ADD5-2CD9BDBC272D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6EE5E9-153F-486B-ADD5-2CD9BDBC272D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15D24618-8FEA-407C-8DBA-82D54CEB9332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D24618-8FEA-407C-8DBA-82D54CEB9332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D24618-8FEA-407C-8DBA-82D54CEB9332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D24618-8FEA-407C-8DBA-82D54CEB9332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFC8802C-7C7B-43B0-9754-5E1E0D924E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC8802C-7C7B-43B0-9754-5E1E0D924E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC8802C-7C7B-43B0-9754-5E1E0D924E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC8802C-7C7B-43B0-9754-5E1E0D924E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A086E1AE-8703-403E-AB9F-9471B2FC474E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A086E1AE-8703-403E-AB9F-9471B2FC474E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A086E1AE-8703-403E-AB9F-9471B2FC474E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A086E1AE-8703-403E-AB9F-9471B2FC474E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15D24618-8FEA-407C-8DBA-82D54CEB9332} = {57C5BAA7-01F9-4D01-98D7-9440B7D989EF}
+		{FFC8802C-7C7B-43B0-9754-5E1E0D924E79} = {57C5BAA7-01F9-4D01-98D7-9440B7D989EF}
+		{A086E1AE-8703-403E-AB9F-9471B2FC474E} = {57C5BAA7-01F9-4D01-98D7-9440B7D989EF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63DF8AE4-CE8F-4A27-AF30-6821E9020074}
+	EndGlobalSection
+EndGlobal
