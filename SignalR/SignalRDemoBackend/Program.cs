@@ -4,16 +4,19 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+
 builder.Services.AddSignalR();
+builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddCors(option =>
 {
     option.AddDefaultPolicy(policy =>
     {
-        policy.AllowAnyHeader()
-                .AllowAnyOrigin()
-                .AllowAnyMethod();
+        policy
+        .WithOrigins("http://localhost:4200")
+        .AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowCredentials();
     });
 });
 
@@ -22,6 +25,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseSwagger();
+    app.UseSwaggerUI();
     app.MapOpenApi();
 }
 
@@ -32,11 +37,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 
-app.UseEndpoints(config =>
-{
-    config.MapHub<ViewHub>("/hubs/view");
-    app.MapControllers();
-    app.MapDefaultControllerRoute();
-});
-
+app.MapControllers();
+app.MapHub<ViewHub>("/hubs/view");
+app.MapHub<StringBuilderHub>("/hubs/stringBuilderHub");
 app.Run();

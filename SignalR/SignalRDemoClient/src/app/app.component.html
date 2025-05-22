@@ -1,2 +1,36 @@
 <h1>SignalR Demo</h1>
 <p>View Counter Update <span>{{counter}}</span></p>
+<p>ApplicationName Update <span>{{applicationName}}</span></p>
+<button (click)="getApplicationName()">GetApplicationName</button>
+
+
+
+<form (ngSubmit)="submitForm()" #nameForm="ngForm">
+  <div>
+    <label for="firstName">First Name:</label>
+    <input
+      type="text"
+      id="firstName"
+      name="firstName"
+      [(ngModel)]="firstName"
+      required
+    />
+  </div>
+
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input
+      type="text"
+      id="lastName"
+      name="lastName"
+      [(ngModel)]="lastName"
+      required
+    />
+  </div>
+
+  <button type="submit" [disabled]="!nameForm.form.valid">Submit</button>
+</form>
+
+<p *ngIf="submitted">
+  Submitted Name: {{ firstName }} {{ lastName }}
+</p>
